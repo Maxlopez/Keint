@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* -----------------------------------------------------------------------------
+   Nombre de la aplicación
+--------------------------------------------------------------------------------
+   Descripción: Descripción de la aplicación.
+   Autor: Nombre del autor
+   Campos: ...
+------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------
+   Fonts
+------------------------------------------------------------------------------ */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular-webfont.eot");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensedLight';
+  src: url("../fonts/RobotoCondensed-Light-webfont.eot");
+  src: url("../fonts/RobotoCondensed-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Light-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-Light-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-Light-webfont.svg#roboto_condensedlight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PtSans';
+  src: url("../fonts/PTS55F-webfont.eot");
+  src: url("../fonts/PTS55F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/PTS55F-webfont.woff") format("woff"), url("../fonts/PTS55F-webfont.ttf") format("truetype"), url("../fonts/PTS55F-webfont.svg#pt_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PtSansNarrow';
+  src: url("../fonts/PTN57F-webfont.eot");
+  src: url("../fonts/PTN57F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/PTN57F-webfont.woff") format("woff"), url("../fonts/PTN57F-webfont.ttf") format("truetype"), url("../fonts/PTN57F-webfont.svg#pt_sans_narrowregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -----------------------------------------------------------------------------
+   Botones
+------------------------------------------------------------------------------ */
+.boton {
+  font-family: Roboto;
+}
+
+.boton-amarillo {
+  background: #fece1a;
+  border: 1px solid #fece1a;
+  color: black;
+  font-weight: normal;
+}
+.boton-amarillo:hover {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.boton-borde {
+  color: white;
+  background: none;
+  border-style: solid !important;
+  border-width: 1px !important;
+}
+
+.boton.boton-oscuro {
+  background: #1C1E20;
+}
+
+/* -----------------------------------------------------------------------------
+   Formularios
+------------------------------------------------------------------------------ */
+/* -----------------------------------------------------------------------------
+   Tablas
+------------------------------------------------------------------------------ */
+/* -----------------------------------------------------------------------------
+   Navegación
+------------------------------------------------------------------------------ */
+#main-nav {
+  margin-top: 5px;
+}
+@media only screen and (max-width: 800px) {
+  #main-nav {
+    margin-top: 0px;
+    background: #26282b !important;
+  }
+  #main-nav:before {
+    padding-left: 1.7em !important;
+    color: white !important;
+  }
+}
+
+#main-menu > li {
+  margin-right: 8px;
+}
+#main-menu > li > a {
+  padding: 0.5em 1em;
+  color: white;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid #1C1E20;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  font-family: Roboto, arial, sans-serif;
+}
+#main-menu > li.item-activo > a, #main-menu > li:hover > a {
+  border: 1px solid #fece1a;
+}
+
+@media only screen and (max-width: 800px) {
+  #main-menu {
+    background: none;
+    border-bottom: 1px solid #1C1E20;
+  }
+  #main-menu li a {
+    padding: 0.7em 1.5em;
+    background: none;
+    border-bottom: 1px solid #313538;
+  }
+  #main-menu li.item-activo:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 4px;
+    height: 100%;
+    background: #fece1a;
+  }
+  #main-menu li.item-activo a, #main-menu li:hover a {
+    border: 1px solid #1C1E20;
+    border-bottom: 1px solid #313538;
+    color: #fece1a;
+  }
+}
+.boton-menu-movil {
+  top: 20px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.boton-menu-movil:before {
+  color: #fece1a;
+}
+.boton-menu-movil:hover:before {
+  color: #fece1a;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 800px) {
+  body.nav-open .boton-menu-movil {
+    top: 4px;
+  }
+}
+
+body {
+  background: white;
+  font-family: Roboto, Arial;
+}
+
+.container {
+  max-width: 1024px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+h1, h2, h3, h4 {
+  font-family: RobotoLight;
+}
+
+#header {
+  background: #1C1E20;
+  padding: 20px 0;
+}
+
+main {
+  min-height: 500px;
+}
+main section {
+  padding: 50px 0;
+}
+
+#seccion-slider {
+  padding: 0px;
+}
+#seccion-slider img {
+  display: block;
+  margin: 0 auto;
+}
+
+#seccion-contactar {
+  padding: 40px;
+  text-align: center;
+  background: #1C1E20;
+}
+#seccion-contactar h2 {
+  color: white;
+  padding-bottom: 15px;
+  font-size: 2.2em;
+}
+@media only screen and (max-width: 800px) {
+  #seccion-contactar h2 {
+    font-size: 1.5em;
+  }
+}
+
+#seccion-nosotros h2 {
+  margin-top: 0;
+}
+
+#seccion-breadcrumb {
+  padding: 15px 0;
+  background: #ececec;
+}
+
+#footer {
+  padding: 40px 0 40px;
+  min-height: 100px;
+  background: #1C1E20;
+}
+#footer h3 {
+  font-family: RobotoLight;
+  color: white;
+}
+#footer .copyright {
+  padding: 8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// Buttons
+// -----------------------------------------------------------------------------
+
+.boton {
+	font-family: Roboto;
+}
+.boton-amarillo {
+	background: $color-yellow;
+	border: 1px solid $color-yellow;
+	color: black;
+	font-weight: normal;
+	&:hover {
+		background: none;
+		border: 1px solid white;
+		color: white;
+	}
+}
+
+.boton-borde {
+	color: white;
+	background: none;
+	border-style: solid !important;
+	border-width: 1px !important;
+}
+
+.boton.boton-oscuro {
+	background: $color-dark;
+}

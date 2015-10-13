@@ -1,0 +1,118 @@
+/* -----------------------------------------------------------------------------
+   Nombre de la aplicación
+--------------------------------------------------------------------------------
+   Descripción: Descripción de la aplicación.
+   Autor: Nombre del autor
+   Campos: ...
+------------------------------------------------------------------------------*/
+
+
+// Compass
+@import 'compass';
+
+// Componentes
+
+@import "partials/variables";
+@import "partials/mixins";
+
+/* -----------------------------------------------------------------------------
+   Fonts
+------------------------------------------------------------------------------ */
+@import "partials/fonts";
+
+/* -----------------------------------------------------------------------------
+   Botones
+------------------------------------------------------------------------------ */
+@import "partials/buttons";
+
+/* -----------------------------------------------------------------------------
+   Formularios
+------------------------------------------------------------------------------ */
+@import "partials/forms";
+
+/* -----------------------------------------------------------------------------
+   Tablas
+------------------------------------------------------------------------------ */
+@import "partials/tables";
+
+/* -----------------------------------------------------------------------------
+   Navegación
+------------------------------------------------------------------------------ */
+@import "partials/navigation";
+
+
+// -----------------------------------------------------------------------------
+// Estilos de la aplicación
+// -----------------------------------------------------------------------------
+body {
+	background: white;
+   font-family: Roboto, Arial;
+}
+.container {
+   max-width: 1024px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+h1, h2, h3, h4 {
+   font-family: RobotoLight;
+}
+
+#header {
+   background: $color-dark;
+   padding: 20px 0;
+}
+
+main {
+   min-height: 500px;
+   section {
+      padding: 50px 0;
+   }
+}
+
+#seccion-slider {
+   padding: 0px;
+   img {
+      display: block;
+      margin: 0 auto;
+   }
+}
+
+#seccion-contactar {
+   padding: 40px;
+   text-align: center;
+   background: $color-dark;
+   h2 {
+      color: white;
+      padding-bottom: 15px;
+      font-size: 2.2em;
+      @include breakpoint(0, $tablet){
+         font-size: 1.5em;
+      }
+   }
+}
+
+#seccion-nosotros {
+   h2 {
+      margin-top: 0;
+   }
+}
+
+#seccion-breadcrumb {
+   padding: 15px 0;
+   background: #ececec;
+}
+
+#footer {
+   padding: 40px 0 40px;
+   min-height: 100px;
+   background: $color-dark;
+   h3 {
+      font-family: RobotoLight;
+      color: white;
+   }
+   .copyright {
+      padding: 8px;
+      text-align: center;
+      color: rgba(255,255,255,0.6);
+   }
+}

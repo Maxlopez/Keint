@@ -1,0 +1,79 @@
+====== Hacer lo siguiente solo una vez ========
+
+Instalar Node.js (Reiniciar PC)
+https://nodejs.org/
+
+Comando para actualizar node:
+npm update -g npm
+
+Instalar Git (https://git-scm.com/)
+
+Instalar Grunt (http://gruntjs.com/getting-started):
+npm install -g grunt-cli
+
+
+Instalar Bower (http://www.browsersync.io/)
+npm install -g bower
+
+Instalar Browser Sync (http://www.browsersync.io/):
+npm install -g browser-sync
+
+Instalar Ruby para ejecutar Sass (http://rubyinstaller.org/)  reiniccar PC
+Luego ejecutar:
+
+gem install sass
+
+
+Instalar comprobador de actualizaciones de módulos de Grunt:
+npm install -g npm-check-updates
+
+
+====== Hacer lo siguiente para cada proyecto Grunt ========
+
+Si no tenemos el archivo package.json, podemos crearlo con el comando:
+npm init
+
+Nota importante!!!:
+Antes de instalar los node_modules, primero debemos comprobar si hay actualizaciones
+para instalar la última versión de cada module, para ello hacer lo siguiente:
+
+npm-check-updates -u
+
+Luego para instalar los node modules que están en package.json, ejecutar:
+npm install
+
+Para instalar modulos independientes, ejecutar:
+npm install nombre-del-modulo --save-dev
+
+
+Luego para empezar a trabajar con el proyecto ejecutar el comando:
+grunt
+
+
+Importante:
+No colocar comentarios en package.json!!!!!
+
+====== Instalacón de Bower ========
+
+Para instalar componentes de bower:
+bower install
+bower install <package>
+
+Para actualizar componentes de bower (importante: la versión tiene q empezar con ^):
+bower update
+
+Para listar componentes de bower:
+bower list
+
+Instalar comprobador de actualizaciones de módulos de Bower:
+npm install -g bower-update
+bower-update
+
+
+
+Gracias :)
+
+
+http://www.codebelt.com/javascript/install-grunt-js-on-windows/
+http://www.smashingmagazine.com/2013/10/29/get-up-running-grunt/
+
