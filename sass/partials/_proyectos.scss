@@ -1,3 +1,18 @@
 // -----------------------------------------------------------------------------
 // Proyectos
 // -----------------------------------------------------------------------------
+#proyectos h3{
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+#proyectos h3::before{
+    background: #f6a50d;
+    bottom: -4px;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
