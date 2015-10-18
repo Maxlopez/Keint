@@ -187,6 +187,11 @@
   width: 50px;
 }
 
+@media screen and (max-width: 600px) {
+  #proyectos img {
+    margin-bottom: 10px;
+  }
+}
 body {
   background: white;
   font-family: Roboto, Arial;
