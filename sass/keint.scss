@@ -53,17 +53,20 @@ body {
    font-family: Roboto, Arial;
 }
 .container {
-   max-width: 1024px;
+   max-width: 1140px;
    padding-top: 1px;
    padding-bottom: 1px;
 }
 h1, h2, h3, h4 {
    font-family: RobotoLight;
 }
+.centrar {
+   text-align: center;
+}
 
 #header {
    background: $color-dark;
-   padding: 20px 0;
+   padding: 25px 0;
 }
 
 main {
@@ -73,31 +76,141 @@ main {
    }
 }
 
+.titulo-seccion {
+   position: relative;
+   font-size: 2.8em;
+   font-family: Roboto;
+   padding-bottom: 12px;
+   &:before {
+      position: absolute; bottom: 0px; left: 50%;
+      width: 60px; height: 5px;
+      margin-left: -30px;
+      content: '';
+      background: $color-yellow;
+   }
+}
+
 #seccion-slider {
    padding: 0px;
+   ul {
+      margin: 0px;
+   }
    img {
       display: block;
       margin: 0 auto;
    }
-}
-
-#seccion-contactar {
-   padding: 40px;
-   text-align: center;
-   background: $color-dark;
-   h2 {
-      color: white;
-      padding-bottom: 15px;
-      font-size: 2.2em;
+   .pgwSlideshow .ps-current {
+      min-height: 80px;
+   }
+   .pgwSlideshow .ps-current .ps-next,
+   .pgwSlideshow .ps-current .ps-prev {
+      border: 0px;
+      top: 50%;
+      margin-top: -25px;
+   }
+   .pgwSlideshow .ps-caption {
+      position: absolute; bottom: 10%; left: 10%;
+      width: 42%; height: 200px;
+      padding: 1.5% 2%;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 1.2em;
+      b {
+         display: inline-block;
+         font-family: RobotoLight;
+         font-size: 1.8em;
+         padding-bottom: 10px;
+      }
       @include breakpoint(0, $tablet){
-         font-size: 1.5em;
+         width: 70%;
+         height: 25%;
+         padding: 2% 2.5%;
+
+         b {
+            font-size: 1.2em;
+         }
+         font-size: 1em;
+         p {
+            display: none;
+         }
+      }
+      @include breakpoint(0, $phone){
+         display: none !important;
       }
    }
 }
 
-#seccion-nosotros {
+#seccion-contactar {
+   position: relative;
+
+   text-align: center;
+   background: rgba(#000, 0.85);
    h2 {
-      margin-top: 0;
+      color: white;
+      padding-bottom: 15px;
+      font-size: 2.6em;
+      font-family: RobotoCondensedLight;
+      font-weight: normal;
+      @include breakpoint(0, $tablet){
+         font-size: 1.5em;
+      }
+   }
+   .parallax {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/title_box_bg.jpg");
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+   }
+}
+
+#seccion-nosotros {
+   background: #e0e0e0;
+}
+
+#seccion-proyectos {
+
+   .item-proyecto {
+      position: relative;
+      margin-bottom: 40px;
+      h3 {
+         position: absolute; left: 30px; top: 20%;
+         color: white;
+         @include opacity(0);
+         @include transition(top 0.3s linear 0s);
+      }
+      .boton {
+         position: absolute; left: 30px; bottom: 2%;
+         @include opacity(0);
+         @include transition(bottom 0.3s linear 0s);
+      }
+      .overlay {
+         position: absolute; left: 0; top: 0;
+         background: #000 none repeat scroll 0 0;
+         width: 100%;
+         height: 100%;
+         overflow: hidden;
+         @include opacity(0);
+         @include transition(opacity 0.3s linear 0s);
+      }
+      &:hover {
+         .overlay {
+            @include opacity(0.7);
+         }
+         h3 {
+            top: 35%;
+            @include opacity(1);
+         }
+         .boton {
+            bottom: 15%;
+            @include opacity(1);
+         }
+      }
+
    }
 }
 
@@ -110,9 +223,18 @@ main {
    padding: 40px 0 40px;
    min-height: 100px;
    background: $color-dark;
-   h3 {
-      font-family: RobotoLight;
+   .titulo-footer {
       color: white;
+      font-weight: normal;
+      position: relative;
+      font-family: Roboto;
+      padding-bottom: 12px;
+      &:before {
+         position: absolute; bottom: 0px; left: 0px;
+         width: 60px; height: 2px;
+         content: '';
+         background: $color-yellow;
+      }
    }
    .copyright {
       padding: 8px;

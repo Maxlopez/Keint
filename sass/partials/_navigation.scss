@@ -7,6 +7,9 @@ $resposive-bg-color: lighten($color-dark, 4%);
 
 #main-nav {
 	margin-top: 5px;
+	ul {
+  	float: right;
+  }
 	@include breakpoint(0, $tablet){
 		margin-top: 0px;
     background: $resposive-bg-color !important;
@@ -14,7 +17,11 @@ $resposive-bg-color: lighten($color-dark, 4%);
 			padding-left: 1.7em !important;
 			color: white !important;
     }
+    ul {
+	  	float: none;
+	  }
   }
+
 }
 #main-menu {
 	> li {
