@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* -----------------------------------------------------------------------------
+   Keint Construcciones - Administración
+--------------------------------------------------------------------------------
+   Descripción: Proyecto del Curso Programación Avanzada.
+   Autor: Grupo Programación Avanzada
+------------------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------
+   Fonts
+------------------------------------------------------------------------------ */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular-webfont.eot");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensedLight';
+  src: url("../fonts/RobotoCondensed-Light-webfont.eot");
+  src: url("../fonts/RobotoCondensed-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Light-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-Light-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-Light-webfont.svg#roboto_condensedlight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PtSans';
+  src: url("../fonts/PTS55F-webfont.eot");
+  src: url("../fonts/PTS55F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/PTS55F-webfont.woff") format("woff"), url("../fonts/PTS55F-webfont.ttf") format("truetype"), url("../fonts/PTS55F-webfont.svg#pt_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PtSansNarrow';
+  src: url("../fonts/PTN57F-webfont.eot");
+  src: url("../fonts/PTN57F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/PTN57F-webfont.woff") format("woff"), url("../fonts/PTN57F-webfont.ttf") format("truetype"), url("../fonts/PTN57F-webfont.svg#pt_sans_narrowregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -----------------------------------------------------------------------------
+   General
+------------------------------------------------------------------------------ */
+.clearfix {
+  zoom: 1;
+  /* For IE 6/7*/
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* -----------------------------------------------------------------------------
+   Header
+------------------------------------------------------------------------------ */
+#header {
+  background: #282b2e;
+  padding: 8px 20px;
+}
+#header #logo {
+  margin-top: 8px;
+}
+
+#top-menu {
+  float: right;
+}
+#top-menu > li {
+  height: 100%;
+  padding: 0 4px;
+}
+#top-menu > li > a {
+  padding: 5px;
+  color: white;
+  background: none;
+}
+#top-menu > li > a span {
+  color: #a4a9ae;
+  font-size: 1em;
+}
+#top-menu > li img {
+  max-width: 28px;
+}
+
+/* -----------------------------------------------------------------------------
+   Sidebar
+------------------------------------------------------------------------------ */
+#sidebar {
+  background: #1e2123;
+  min-height: 700px;
+}
+
+#main-menu {
+  list-style: none;
+  margin: 0px;
+}
+#main-menu > li > a {
+  display: block;
+  padding: 0.8em 1.5em;
+  color: #b3b3b3;
+  line-height: 1em;
+  text-decoration: none;
+  border-bottom: 1px solid #2d3033;
+}
+#main-menu > li > a:hover {
+  color: white;
+}
+#main-menu > li > a i {
+  padding-right: 5px;
+}
+
+/* -----------------------------------------------------------------------------
+   Content
+------------------------------------------------------------------------------ */
+.page-content {
+  padding: 20px;
+}
+
+ul.breadcrumb {
+  margin: -20px -20px 20px -20px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #cdd1d4;
+  list-style: none;
+}
+ul.breadcrumb > li {
+  float: left;
+  margin-right: 10px;
+}
+ul.breadcrumb > li > a {
+  text-decoration: none;
+  color: #4B5054;
+}
+ul.breadcrumb > li > a:hover {
+  text-decoration: underline;
+}
+ul.breadcrumb > li i {
+  padding-left: 5px;
+}

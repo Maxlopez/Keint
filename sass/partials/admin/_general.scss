@@ -1,0 +1,11 @@
+.clearfix {
+  zoom: 1; /* For IE 6/7*/
+  &:before,
+  &:after {
+  	display: table;
+  	content: "";
+  }
+  &:after {
+  	clear: both;
+  }
+}

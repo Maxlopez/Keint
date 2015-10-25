@@ -1,9 +1,8 @@
 /* -----------------------------------------------------------------------------
-   Nombre de la aplicación
+   Keint Construcciones
 --------------------------------------------------------------------------------
-   Descripción: Descripción de la aplicación.
-   Autor: Nombre del autor
-   Campos: ...
+   Descripción: Proyecto del Curso Programación Avanzada.
+   Autor: Grupo Programación Avanzada
 ------------------------------------------------------------------------------*/
 
 
@@ -50,12 +49,24 @@
 // -----------------------------------------------------------------------------
 body {
 	background: white;
+   color: $base-text-color;
    font-family: Roboto, Arial;
 }
 .container {
    max-width: 1140px;
    padding-top: 1px;
    padding-bottom: 1px;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7*/
+  &:before,
+  &:after {
+   display: table;
+   content: "";
+  }
+  &:after {
+   clear: both;
+  }
 }
 h1, h2, h3, h4 {
    font-family: RobotoLight;
