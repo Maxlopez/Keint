@@ -161,8 +161,7 @@ module.exports = function(grunt){
 		}
     });
 
-
-    grunt.registerTask('default', ['rename', 'compass:init', 'concat', 'uglify:modernizr', 'copy', 'browserSync', 'concurrent:watch']);
+    grunt.registerTask('default', ['compass:init', 'concat', 'uglify:modernizr', 'copy', 'browserSync', 'concurrent:watch']);
     grunt.registerTask('build', ['cssmin']);
     grunt.registerTask('bk', ['backup']);
 };
